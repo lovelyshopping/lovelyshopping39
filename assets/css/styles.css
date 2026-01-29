@@ -1,0 +1,56 @@
+/* Mobile-first styles for lovelyshopping japan */
+:root{
+  --accent:#ff6fa3;
+  --muted:#666;
+  --card-bg:#fff;
+  --surface:#f9f9fb;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;margin:0;background:var(--surface);color:#111}
+.site-header{padding:12px;border-bottom:1px solid #eee;background:white}
+.brand{display:flex;gap:12px;align-items:center}
+.brand-img{width:72px;height:72px;border-radius:12px;object-fit:cover;border:3px solid var(--accent)}
+.brand-text h1{margin:0;font-size:1.25rem}
+.brand-text .tag{margin:4px 0 0;color:var(--muted);font-size:.9rem}
+
+/* PO banner */
+.po-banner{margin-top:8px;padding:8px;border-radius:8px;text-align:center;font-weight:600}
+.po-open{background:#e6ffed;color:#1b7a3a;border:1px solid #c6f0d0}
+.po-closed{background:#fff3f3;color:#7a1b1b;border:1px solid #ffd6d6}
+
+/* Categories */
+.categories{display:flex;gap:8px;overflow:auto;padding:12px;background:linear-gradient(180deg,rgba(0,0,0,0.02),transparent)}
+.categories button{flex:0 0 auto;padding:8px 12px;border-radius:20px;border:none;background:white;box-shadow:0 1px 2px rgba(0,0,0,.04);cursor:pointer}
+.categories button.active{background:var(--accent);color:white}
+
+/* Product grid */
+.product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;padding:12px}
+.card{background:var(--card-bg);border-radius:10px;padding:10px;box-shadow:0 1px 4px rgba(0,0,0,.05);display:flex;flex-direction:column;gap:8px}
+.card img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+.card h3{margin:0;font-size:1rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.card .price{font-weight:700;color:#111}
+.card .actions{display:flex;gap:8px;margin-top:auto}
+button.btn{padding:8px 10px;border-radius:8px;border:none;cursor:pointer}
+.btn-primary{background:var(--accent);color:white}
+.btn-ghost{background:transparent;border:1px solid #eee}
+
+/* Modal */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;padding:16px;z-index:1000}
+.modal.hidden{display:none}
+.modal-inner{background:white;border-radius:12px;max-width:820px;width:100%;max-height:90vh;overflow:auto;padding:16px;position:relative}
+.modal-close{position:absolute;right:12px;top:12px;border:none;background:transparent;font-size:18px;cursor:pointer}
+.modal .wide-img{width:100%;height:320px;object-fit:cover;border-radius:8px}
+.video iframe{width:100%;height:320px;border-radius:8px}
+
+/* review / small text */
+.note{font-size:.85rem;color:var(--muted)}
+
+/* footer */
+.site-footer{padding:12px;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid #eee;background:white;margin-top:16px}
+
+/* responsiveness */
+@media(min-width:720px){
+  .brand-img{width:96px;height:96px}
+  .card img{height:200px}
+}
