@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>lovelyshopping japan — JASTIP Pre-Order</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="assets/images/header-cute.jpg" alt="lovelyshopping japan" class="brand-img" />
+      <div class="brand-text">
+        <h1>lovelyshopping japan</h1>
+        <p class="tag">Jastip (Pre-Order) — Japanese goods, trusted partner</p>
+      </div>
+    </div>
+    <div id="po-banner" class="po-banner"></div>
+  </header>
+
+  <nav class="categories" id="categories"></nav>
+
+  <main>
+    <section id="product-list" class="product-grid" aria-live="polite"></section>
+  </main>
+
+  <!-- product detail / checkout modal -->
+  <div id="modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-inner" role="dialog" aria-modal="true">
+      <button id="close-modal" class="modal-close" aria-label="Close">✕</button>
+      <div id="modal-content"></div>
+    </div>
+    </div>
+
+  <footer class="site-footer">
+    <small>lovelyshopping japan — Pre-order only • Indonesia only • Payment: BNI transfer</small>
+  </footer>
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
