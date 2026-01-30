@@ -1,0 +1,34 @@
+[
+  {
+    "id": "p001",
+    "title": "Lovely Shirt - Merah",
+    "price": 125000,
+    "currency": "IDR",
+    "image": "https://via.placeholder.com/400x300?text=Shirt+Merah",
+    "description": "Kemeja merah bagus ukuran S/M/L"
+  },
+  {
+    "id": "p002",
+    "title": "Lovely Tote Bag",
+    "price": 75000,
+    "currency": "IDR",
+    "image": "https://via.placeholder.com/400x300?text=Tote+Bag",
+    "description": "Tote bag lucu untuk belanja"
+  },
+  {
+    "id": "p003",
+    "title": "Lovely Mug",
+    "price": 45000,
+    "currency": "IDR",
+    "image": "https://via.placeholder.com/400x300?text=Mug",
+    "description": "Mug keramik cantik"
+  },
+  {
+    "id": "p004",
+    "title": "Lovely Scarf",
+    "price": 90000,
+    "currency": "IDR",
+    "image": "https://via.placeholder.com/400x300?text=Scarf",
+    "description": "Syal hangat dan stylish"
+  }
+]
